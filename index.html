@@ -2,12 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/filip.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>haha imaš 30 godina</title>
   </head>
+  <style>
+    #custom-loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      font-family: 'Fredoka', sans-serif;
+      color: white;
+      background-color: rgb(2, 52, 73);
+    }
+
+    #custom-loader img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    #custom-loader p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="custom-loader">
+        <img src="/filip.png" alt="Logo" />
+        <p>za filipaaa uuu</p>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
