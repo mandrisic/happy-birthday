@@ -7,9 +7,9 @@ const rootElement = document.getElementById('root');
 const loader = document.getElementById('custom-loader');
 if (loader) loader.remove();
 
-const root = ReactDOM.createRoot(rootElement);
+const root = createRoot(rootElement);
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
