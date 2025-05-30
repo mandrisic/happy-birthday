@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 270px;
+    height: 400px;
+    background-color: transparent;
+    border: 20px solid white;
+    border-bottom: 80px solid white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 100;
+    
+    .cardImg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;  
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 83, 108, 0.7);
+        border-radius: 5px;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    .lyricsContainer {
+        padding: 10px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+      .lyricLine {
+        opacity: 0.4;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        color: white;
+      }
+      
+      .activeLine {
+        font-weight: bold;
+        opacity: 1;
+        font-size: 18px;
+      }
+
+    .musicContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        cursor: pointer;
+
+        .musicStart {
+            width: 26px;
+            height: 26px;
+            border-top: 13px solid transparent; 
+            border-bottom: 13px solid transparent;
+            border-left: 22px solid rgb(9, 68, 85);
+            margin-left: 10px;
+        }
+
+        .musicStop {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            gap: 6px;
+
+            .line {
+                width: 5px;
+                height: 22px;
+                background-color: rgb(9, 68, 85);
+            }
+        }
+    }
+
+    .text {
+        position: absolute; 
+        bottom: -62px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 500;
+    }
+}

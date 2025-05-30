@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Card1.module.scss'
-import img from '../../assets/IMG-20240619-WA0055.png'
+import img from '../../assets/IMG-20240619-WA0055.jpg'
 
 export const Card1 = () => {
   return (
