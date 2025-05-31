@@ -1,0 +1,15 @@
+{
+    "short_name": "Za Filipa",
+    "name": "hehe imaš 30 godina",
+    "icons": [
+      {
+        "src": "filip.png",
+        "type": "image/png",
+        "sizes": "1080x1390"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#fff",
+    "background_color": "rgb(2, 52, 73)"
+  }
